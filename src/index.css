@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-premium-gold: #D4AF37;
+  --color-gold-accent: #f59e0b; /* amber-500 */
+  --color-matte-black: #0A0A0A;
+  --color-surface-dark: #111111;
+  --color-surface-light: #1A1A1A;
+  --color-border-dim: #222222;
+  --color-border-accent: #2A2A2A;
+}
+
+:root {
+  background-color: var(--color-matte-black);
+  color: #fff;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-matte-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-premium-gold);
+}
+
+.glass {
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border-dim);
+}
+
+.surface-card {
+  background: var(--color-surface-dark);
+  border: 1px solid var(--color-border-dim);
+  border-radius: 1.5rem; /* rounded-3xl */
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5DEB3 50%, #C5A028 100%);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5DEB3 50%, #C5A028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

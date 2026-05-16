@@ -1,0 +1,8 @@
+{
+  "name": "Barbearia do Hudson - Premium SaaS",
+  "description": "Sistema completo de gestão para a Barbearia do Hudson, com agendamentos, controle de clientes, financeiro e dashboard profissional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
